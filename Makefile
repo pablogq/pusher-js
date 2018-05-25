@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-build_all: web react-native node worker
+build_all: web nativescript react-native node worker
 
 # sockjs:
 # 	pushd src/runtimes/web/dom/sockjs && \
@@ -20,6 +20,10 @@ web:
 	echo "Browser Minified Release:"
 	# cp src/runtimes/web/dom/sockjs/sockjs.min.js dist/web
 	MINIFY=web node_modules/webpack/bin/webpack.js --config=webpack/config.min.js
+
+nativescript:
+	echo "NativeScript Release:"
+	node_modules/webpack/bin/webpack.js --config=webpack/config.nativescript.js
 
 react-native:
 	echo "React Native Release:"

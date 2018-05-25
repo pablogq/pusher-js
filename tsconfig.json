@@ -17,13 +17,13 @@
     "src/d.ts/window/sockjs.d.ts",
     "src/d.ts/window/events.d.ts",
     "src/d.ts/react-native/react-native.d.ts",
+    "src/d.ts/nativescript/nativescript.d.ts",
     "src/d.ts/module/module.d.ts",
     "src/d.ts/fetch/promise.d.ts",
     "src/d.ts/fetch/fetch.d.ts",
     "src/runtimes/web/net_info.ts",
-    "src/runtimes/react-native/net_info.ts"
+    "src/runtimes/react-native/net_info.ts",
+    "src/runtimes/nativescript/net_info.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
